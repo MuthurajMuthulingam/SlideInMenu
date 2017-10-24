@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DownloadAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AC-2Y-W8c">
+                                <rect key="frame" x="75.5" y="221.5" width="224" height="224"/>
+                                <color key="backgroundColor" red="0.23878357920000001" green="1" blue="0.34977518769999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4AC-2Y-W8c" secondAttribute="height" multiplier="1:1" id="egD-oW-aqD"/>
+                                    <constraint firstAttribute="width" constant="224" id="h6r-QP-BN6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gz-Bj-Nf7" userLabel="Cart">
+                                <rect key="frame" x="16" y="613" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.027940538189999999" blue="0.1255977456" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7gz-Bj-Nf7" secondAttribute="height" multiplier="1:1" id="ChO-o1-Sn2"/>
+                                    <constraint firstAttribute="height" constant="44" id="zyy-FR-TlR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6w-xU-Zr2">
+                                <rect key="frame" x="110" y="579" width="156" height="30"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.39607843139999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="YVV-3u-naS"/>
+                                    <constraint firstAttribute="height" constant="30" id="qid-bb-cLK"/>
+                                </constraints>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RGv-PF-5E5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4AC-2Y-W8c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q5T-Fb-euI"/>
+                            <constraint firstItem="7gz-Bj-Nf7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RtO-Yg-iFK"/>
+                            <constraint firstItem="4AC-2Y-W8c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vwc-7T-HcU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S6w-xU-Zr2" secondAttribute="bottom" constant="58" id="cxh-s4-ndh"/>
+                            <constraint firstItem="S6w-xU-Zr2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hM0-4D-eHZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7gz-Bj-Nf7" secondAttribute="bottom" constant="10" id="z4k-rL-A8v"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="cartView" destination="7gz-Bj-Nf7" id="gkW-7C-I8l"/>
+                        <outlet property="downloadView" destination="4AC-2Y-W8c" id="N1q-T4-wbV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
